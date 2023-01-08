@@ -6,6 +6,8 @@ font-family: 'DM Sans', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
 
+/* General */
+
 :root {
     --black: #171718;
     --black-border: #26292D;
@@ -24,6 +26,18 @@ body {
     font-weight: 700;
     font-size: 24px;
     letter-spacing: -0.5px;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.title-1 {
+    margin-bottom: 60px;
+    line-height: 130%;
+    color: var(--accent);
+    font-size: 60px;
+    text-align: center;
 }
 
 /* nav */
@@ -160,4 +174,31 @@ body {
 
 .header-btn:active {
     transform: scale(1.1)
+}
+
+/* projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.project {
+    max-width: 370px;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 25%);
+    border-radius: 10px;
+    background-color: var(--white);
+
+}
+
+.project img {
+    border-radius: 10px;
+}
+
+.project h3 {
+    padding: 15px 20px 25px;
+    line-height: 130%;
 }
