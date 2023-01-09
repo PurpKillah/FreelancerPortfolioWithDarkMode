@@ -9,6 +9,7 @@ font-family: 'Poppins', sans-serif;
 /* General */
 
 :root {
+    --absolute-black: #000;
     --black: #171718;
     --black-border: #26292D;
     --white: #fff;
@@ -207,6 +208,54 @@ body {
     line-height: 130%;
 }
 
+/* project details */
+
+.project-details {
+    margin: 0 auto;
+    max-width: 865px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-details-cover {
+    max-width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.project-details-desc {
+    line-height: 130%;
+}
+
+.btn-outline-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-outline {
+    height: 48px;
+    width: 169px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--absolute-black);
+    border-radius: 5px;
+}
+
+.btn-outline p {
+    line-height: 1.33;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    margin-left: 10px;
+}
+
+
 /* footer */
 
 .vk {
@@ -233,4 +282,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--white);
+}
+
+.copyright p+p {
+    margin-top: 0.5em;
 }
